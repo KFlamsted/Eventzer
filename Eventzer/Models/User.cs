@@ -18,5 +18,15 @@ namespace Eventzer.Models
         public Address address { get; set; }
 
         public string password { get; set; }
+
+        public User()
+        {
+            this.id = 0;
+            this.email = "mail@mail.dk";
+            this.first_name = "Peter";
+            this.last_name = "Hansen";
+            this.address = new Address("Kollegiebakken 9", "Kongens Lyngby", 2800, "Koebenhavn", "Denmark");
+            this.password = "helloworld";
+        }
     }
 }

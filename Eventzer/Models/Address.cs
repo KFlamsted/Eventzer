@@ -15,5 +15,13 @@ namespace Eventzer.Models
         public string region { get; set; }
 
         public string country { get; set; }
+
+        public Address(string address_line, string city, int zipcode, string region, string country)
+        {
+            City temp_city = new City(city, zipcode);
+            this.address_line = address_line;
+            this.region = region;
+            this.country = country;
+        }
     }
 }

@@ -10,5 +10,11 @@ namespace Eventzer.Models
         public string name { get; set; }
 
         public int zipcode { get; set; }
+
+        public City(string name, int zipcode)
+        {
+            this.name = name;
+            this.zipcode = zipcode;
+        }
     }
 }
