@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eventzer.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -31,7 +32,7 @@ namespace Eventzer.Models
         {
             this.id = id;
             this.name = "asti night";
-            this.owner = new User();
+            this.owner = new User(0);
             this.event_address = owner.address;
             this.start_time = DateTime.Now;
             this.end_time = DateTime.Now;
@@ -40,6 +41,5 @@ namespace Eventzer.Models
             this.description = "Kom til Asti night og drik en masse Asti!";
             this.public_event = true;
         }
-
     }
 }

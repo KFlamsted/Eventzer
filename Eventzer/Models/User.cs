@@ -19,14 +19,26 @@ namespace Eventzer.Models
 
         public string password { get; set; }
 
-        public User()
+        public User(int id)
         {
-            this.id = 0;
+            this.id = id;
             this.email = "mail@mail.dk";
             this.first_name = "Peter";
             this.last_name = "Hansen";
             this.address = new Address("Kollegiebakken 9", "Kongens Lyngby", 2800, "Koebenhavn", "Denmark");
             this.password = "helloworld";
         }
+
+        //checking if two users are the same
+        public bool equals(User user)
+        {
+            if(this.id == user.id)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
     }
 }
