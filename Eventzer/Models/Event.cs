@@ -30,15 +30,15 @@ namespace Eventzer.Models
         public Event(int id)
         {
             this.id = id;
-            name = "asti night";
-            owner = new User();
-            event_address = owner.address;
-            start_time = DateTime.Now;
-            end_time = DateTime.Now;
-            price = 0;
-            min_age = 18;
-            description = "Kom til Asti night og drik en masse Asti!";
-            public_event = true;
+            this.name = "asti night";
+            this.owner = new User();
+            this.event_address = owner.address;
+            this.start_time = DateTime.Now;
+            this.end_time = DateTime.Now;
+            this.price = 0;
+            this.min_age = 18;
+            this.description = "Kom til Asti night og drik en masse Asti!";
+            this.public_event = true;
         }
 
     }

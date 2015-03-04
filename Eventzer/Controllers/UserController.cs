@@ -9,5 +9,6 @@ namespace Eventzer.Controllers
 {
     public class UserController : ApiController
     {
+        
     }
 }
