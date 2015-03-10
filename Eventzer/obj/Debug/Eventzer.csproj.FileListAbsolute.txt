@@ -30,3 +30,4 @@ c:\users\kristian\documents\visual studio 2013\Projects\Eventzer\Eventzer\bin\Sy
 c:\users\kristian\documents\visual studio 2013\Projects\Eventzer\Eventzer\obj\Debug\Eventzer.csprojResolveAssemblyReference.cache
 c:\users\kristian\documents\visual studio 2013\Projects\Eventzer\Eventzer\obj\Debug\Eventzer.dll
 c:\users\kristian\documents\visual studio 2013\Projects\Eventzer\Eventzer\obj\Debug\Eventzer.pdb
+C:\Users\Kristian\documents\visual studio 2013\Projects\Eventzer\Eventzer\bin\MySql.Data.dll

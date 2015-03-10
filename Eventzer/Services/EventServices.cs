@@ -49,7 +49,7 @@ namespace Eventzer.Services
                 foreach (Event e in (List<Event>)ctx.Application["Events"])
                 {
                     //checking if cityname and zipcode is the same
-                    if (e.event_address.region.Equals(region))
+                    if (e.event_address.city.region.Equals(region))
                     {
                         events.Add(e);
                     }
