@@ -29,6 +29,17 @@ namespace Eventzer.Models
             this.password = "helloworld";
         }
 
+        /* Constructor for user when setting all variables*/
+        public User(int id, string email, string first_name, string last_name, Address address, string password)
+        {
+            this.id = id;
+            this.email = email;
+            this.first_name = first_name;
+            this.last_name = last_name;
+            this.address = address;
+            this.password = password;
+        }
+
         //checking if two users are the same
         public bool equals(User user)
         {

@@ -9,6 +9,7 @@ namespace Eventzer.Services
     public class EventServices
     {
 
+        //returning all events in the database
         public List<Event> GetAllEvents()
         {
             var ctx = HttpContext.Current;
