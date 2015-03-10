@@ -7,6 +7,7 @@ namespace Eventzer.Models
 {
     public class Address
     {
+        public int id { get; set; }
 
         public string address_line { get; set; }
 
@@ -14,9 +15,10 @@ namespace Eventzer.Models
 
         public string country { get; set; }
 
-        public Address(string address_line, string city, int zipcode, string region, string country)
+        public Address(int id, string address_line, string city, int zipcode, string region, string country)
         {
-            this.city = new City(city, zipcode, region);
+            this.id = id;
+            this.city = new City(zipcode, city, region);
             this.address_line = address_line;
             this.country = country;
         }

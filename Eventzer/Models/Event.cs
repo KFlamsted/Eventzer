@@ -28,20 +28,6 @@ namespace Eventzer.Models
 
         public bool public_event { get; set; }
 
-        //setting some standard values, might be deleted later.
-        public Event(int id)
-        {
-            this.id = id;
-            this.name = "asti night";
-            this.owner = new User(0);
-            this.event_address = owner.address;
-            this.start_time = DateTime.Now;
-            this.end_time = DateTime.Now;
-            this.price = 0;
-            this.min_age = 18;
-            this.description = "Kom til Asti night og drik en masse Asti!";
-            this.public_event = true;
-        }
         /* constructor setting all the variables in the object*/
         public Event(int id, string name, User owner, Address event_address, DateTime start_time, DateTime end_time, int price, int min_age, string description, bool public_event)
         {
