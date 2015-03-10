@@ -12,15 +12,12 @@ namespace Eventzer.Models
 
         public City city { get; set; }
 
-        public string region { get; set; }
-
         public string country { get; set; }
 
         public Address(string address_line, string city, int zipcode, string region, string country)
         {
-            this.city = new City(city, zipcode);
+            this.city = new City(city, zipcode, region);
             this.address_line = address_line;
-            this.region = region;
             this.country = country;
         }
     }
