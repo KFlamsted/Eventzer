@@ -33,9 +33,9 @@ namespace Eventzer.Controllers
         }
 
         //getting events from a given city
-        public List<Event> Get([FromUri] string cityname, int zip)
+        public List<Event> Get([FromUri] int zip)
         {
-            return es.GetEventsFromCity(cityname, zip);
+            return es.GetEventsFromCity(zip);
         }
 
         //getting events from a given region
